@@ -16,12 +16,12 @@ const AddCarForm = () => {
   const [transmission, setTransmission] = useState('');
   const [range, setRange] = useState<number | string>('');
   const [cover, setCover] = useState<File | null>(null);
-  const [coverFileName, setCoverFileName] = useState<string>(''); // Для отображения имени файла
+  const [coverFileName, setCoverFileName] = useState<string>('');
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       setCover(e.target.files[0]);
-      setCoverFileName(e.target.files[0].name); // Устанавливаем имя файла для отображения
+      setCoverFileName(e.target.files[0].name);
     }
   };
 
@@ -124,7 +124,7 @@ const AddCarForm = () => {
         accept="image/*"
         onChange={handleFileChange}
         className="w-full p-2 mb-2" 
-        value={coverFileName} // Передаем имя файла для отображения
+        value={coverFileName}
         placeholder={''}
       />
       <Button

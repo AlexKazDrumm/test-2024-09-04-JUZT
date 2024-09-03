@@ -9,7 +9,7 @@ interface InputProps {
   min?: number;
   step?: number;
   accept?: string;
-  multiple?: boolean; // Дополнительный пропс для поддержки множественного выбора файлов
+  multiple?: boolean;
 }
 
 const Input: React.FC<InputProps> = ({

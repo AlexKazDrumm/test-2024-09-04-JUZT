@@ -14,7 +14,7 @@ const SelectActionModal: React.FC<SelectActionModalProps> = ({ onClose, newCarId
     <div className="p-6">
       <h2 className="text-xl font-bold mb-4">Car Added Successfully</h2>
       <p>What would you like to do next?</p>
-      <div className="mt-4 flex flex-col space-y-4"> {/* flex-col для вертикального расположения */}
+      <div className="mt-4 flex flex-col space-y-4">
         <Button
           onClick={() => {
             onClose();

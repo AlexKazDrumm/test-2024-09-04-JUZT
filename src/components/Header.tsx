@@ -4,7 +4,7 @@ import ModalWrapper from '@/components/UI/ModalWrapper';
 import AuthModal from '@/components/Modals/AuthModal';
 import { useUser } from '@/context/UserContext';
 import { useRouter } from 'next/router';
-import Image from 'next/image'; // Добавляем импорт Image
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const { user, logout } = useUser();
